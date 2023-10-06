@@ -1,0 +1,417 @@
+body {
+    font-family: 'Poppins';
+
+    /* background-size: cover; */
+    background-attachment: scroll;
+
+}
+
+.custom-1 {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
+
+.first-text {
+    text-align: left;
+}
+
+.another {
+    text-align: right;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    font-weight: 580;
+
+}
+
+p {
+    background-color: #fff;
+}
+
+main span {
+    color: gold;
+}
+
+.custom-2 span {
+    color: black;
+}
+
+.nav-logo {
+    width: 125px;
+    border: none;
+    padding: none;
+}
+
+.stick-section {
+    height: 300px;
+    top: 200px;
+    position: sticky;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    /* background-color: #fff; */
+
+
+}
+
+.nav-image-container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.steps-cards {
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: solid 2px gold;
+    transition-duration: 0.25s;
+    background-color: #fff;
+}
+
+.steps-cards:hover {
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: solid 2px gold;
+    margin-left: 10%;
+    margin-right: -15%;
+}
+
+.two {
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: solid 2px gold;
+    transition-duration: 0.25s;
+}
+
+.two:hover {
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: solid 2px gold;
+    margin-right: 10%;
+    margin-left: -15%;
+}
+
+.fourth-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #000;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+}
+
+.fourth-section span {
+    color: gold;
+}
+
+.image-container {
+    border: solid 2px goldenrod;
+    border-radius: 100%;
+    padding: 2.5%;
+}
+
+footer {
+
+    background-size: cover;
+}
+
+/* Testi*/
+
+@media only screen and (max-width:768px) {
+
+    .custom-2 {
+        margin-top: 66px;
+    }
+
+}
+
+
+.card {
+
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.card:hover {
+
+    background-color: #eee;
+
+}
+
+.ratings i {
+
+    color: orange;
+}
+
+.testimonial-list {
+
+    list-style: none;
+}
+
+.testimonial-list li {
+
+    margin-bottom: 20px;
+}
+
+.testimonials-margin {
+
+    margin-top: -19px;
+}
+
+/* testi */
+.social-media {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: larger;
+}
+
+.footer-logo {
+    width: 15%;
+}
+
+.image-icon {
+    width: 10%;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+}
+
+.ceo-image {
+    border: 6px rgb(66, 66, 66) solid;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+}
+
+.divider {
+    width: 20%;
+    height: 5px;
+    background-color: gold;
+    font-weight: bold;
+}
+
+.employee {
+    width: 90%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+.employee-card {
+    /* border: 6px rgb(66, 66, 66) solid; */
+    border-radius: 0px;
+}
+
+.employee i {
+    background-color: black;
+    padding: 2%;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+i {
+    font-size: x-large;
+}
+
+.social-icons i {
+    background-color: black;
+    padding: 1%;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: large;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(199, 199, 199);
+}
+
+.contact-form input {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contact-form textarea {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contact-form label {
+    padding-top: 1%;
+}
+
+footer {
+    padding-top: 5%;
+}
+
+nav p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+nav h5 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.links-section a {
+    text-decoration: none;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid lightgrey;
+    color: black;
+    transition-duration: 0.25s;
+}
+
+.links-section a:hover {
+    text-decoration: none;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid lightgrey;
+    color: #fff;
+    background-color: #000;
+    padding-left: 2.5%;
+    border-left: 5px solid gold;
+}
+
+.links-section .active {
+    text-decoration: none;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid lightgrey;
+    color: #fff;
+    background-color: #000;
+    padding-left: 2.5%;
+    border-left: 5px solid gold;
+}
+
+@media only screen and (max-width:768px) {
+    .stick-section {
+        position: static;
+        /* height: 300px; */
+        padding-bottom: 1.5%;
+    }
+
+    .steps-cards:hover {
+        box-shadow: 5px 5px 5px rgb(199, 199, 199);
+        border-radius: 15px;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-top: solid 2px gold;
+        margin-left: 2%;
+        margin-right: -2%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+
+    .card-section {
+        width: 95%;
+        margin: auto;
+    }
+
+    .stick-section {
+        position: static;
+        /* height: 300px; */
+        padding-bottom: 10%;
+        margin-bottom: 30%;
+    }
+
+    .steps-cards:hover {
+        margin-top: -2%;
+        margin-bottom: 2%;
+        margin-left: inherit;
+        margin-bottom: inherit;
+
+    }
+
+    .two:hover {
+        margin-top: -2%;
+        margin-bottom: 2%;
+        margin-left: inherit;
+        margin-bottom: inherit
+    }
+
+    .steps-cards img {
+        width: 15%;
+    }
+
+    .first-text {
+        text-align: center;
+    }
+
+    .another {
+        margin-bottom: 10%;
+        padding-bottom: 10%;
+        margin-top: 10%;
+        padding-top: 10%;
+        text-align: center;
+    }
+}
+
+footer p {
+    background-color: #000;
+}
+
+footer i {
+    background-color: gold;
+    color: black;
+    padding: 0.75%;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition-duration: 0.25s;
+}
+
+footer i:hover {
+    background-color: black;
+    color: gold;
+    border: 1px solid gold;
+    padding: 0.75%;
+    border-radius: 5px;
+}
+
+footer {
+
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2.5%;
+}
