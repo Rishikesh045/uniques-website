@@ -1,5 +1,5 @@
 .call-to-action {
-    background: linear-gradient(#1b2f45cc, #1b2f45cc), url('../Assets/building.jpeg'), center center;
+    background: linear-gradient(#1b2f45cc, #1b2f45cc), url('..\/Assets\/building.jpeg'), center center;
     background-size: cover;
     padding: 100px 0;
 }
@@ -23,7 +23,6 @@
 }
 
 .call-to-action .cta-btn {
-    /* font-family: var(--font-default); */
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;

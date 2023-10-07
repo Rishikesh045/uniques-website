@@ -1,5 +1,5 @@
 .contact {
-    background: url("../Assets/contact-bg.png") left top no-repeat;
+    background: url("..\/Assets\/contact-bg.png") left top no-repeat;
     background-size: contain;
     position: relative;
     opacity: 0.8;
@@ -83,7 +83,7 @@
 }
 
 .contact .php-email-form .loading:before {
-    content: "";
+    content: '';
     display: inline-block;
     border-radius: 50%;
     width: 24px;

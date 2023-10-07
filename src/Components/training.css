@@ -1,5 +1,5 @@
 .call-to-action {
-    background: linear-gradient(#1b2f45cc, #1b2f45cc), url('../Assets/building.jpeg'), center center;
+    background: linear-gradient(#1b2f45cc, #1b2f45cc), url('..\/Assets\/building.jpeg'), center center;
     background-size: cover;
     padding: 100px 0;
 }

@@ -10,34 +10,27 @@ p {
     color: rgb(0, 0, 0);
 }
 
-/* Add this CSS to your footerstyle.css file */
-
-/* Apply a scale transformation to the social icons on hover */
 .footer-section .col-md-6 .py-4 p i.fa {
     font-size: 20px;
-    /* Set the initial font size */
+
     transition: transform 0.3s, background-color 0.3s;
-    /* Add a smooth transition */
+
 }
 
-/* Apply the hover effect */
 .footer-section .col-md-6 .py-4 p i.fa:hover {
     transform: scale(0.8);
-    /* Zoom in effect on hover */
+
     background-color: #58a3ce;
-    /* Blue background color on hover */
+
     color: white;
-    /* Change the icon color on hover */
+
     border-radius: 50%;
-    /* Make the icon container circular */
+
     padding: 8px;
-    /* Add padding to the icon container */
+
 }
 
-/* Adjust the padding for the social icon container */
+
 .footer-section .col-md-6 .py-4 p i.fa {
     padding: 0;
 }
-
-
-/* f4f5f8 */

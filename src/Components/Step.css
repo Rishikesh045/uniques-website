@@ -1,14 +1,4 @@
-/**
-* Template Name: FlexStart
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* general */
 :root {
     scroll-behavior: smooth;
 }
@@ -37,9 +27,7 @@ h6 {
     font-family: "Nunito", sans-serif;
 }
 
-/*--------------------------------------------------------------
-  # Values
-  --------------------------------------------------------------*/
+/* values */
 .values .box {
     padding: 30px;
     box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
@@ -69,9 +57,7 @@ h6 {
     transform: scale(1);
 }
 
-/*--------------------------------------------------------------
-  # Counts
-  --------------------------------------------------------------*/
+/* counts */
 .counts {
     padding: 70px 0 60px;
 }
@@ -106,9 +92,7 @@ h6 {
     font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-  # Features
-  --------------------------------------------------------------*/
+/* features */
 .features .feature-box {
     padding: 24px 20px;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
