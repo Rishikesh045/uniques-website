@@ -86,10 +86,10 @@ const Navbar = () => {
 
                                 </ul>
                                 {/* login signin */}
-                                <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                                {/* <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
 
                                     <Link to='/signup' className="text-white text-decoration-none px-3 py-1 rounded-2" style={{ backgroundColor: 'black' }}>Know More</Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <Route path="/project" element={<Project />} />
                 <Route path="/blog" element={<Blog blogs={blogs} />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/google" element={<Google />} />
+                {/* <Route path="/google" element={<Google />} /> */}
                 <Route path='/add-blog' element={<AddBlog />} />
 
             </Routes>

@@ -1,4 +1,5 @@
 import React from "react";
+import image1 from "../Assets/uzone.png"
 
 const Company = () => {
     return (
@@ -51,7 +52,7 @@ const Company = () => {
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
                                             <img
-                                                src="https://theuniques.in/wp-content/uploads/2023/05/4-4.png"
+                                                src={image1}
                                                 className="d-block w-100"
                                                 alt="..."
                                             />

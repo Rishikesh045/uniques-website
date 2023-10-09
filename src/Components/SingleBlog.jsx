@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image from '../Assets/blogsss.jpg'
+import image1 from '../Assets/blogsss.jpg'
 
 const SingleBlog = ({ title, desc, image }) => {
     return (
