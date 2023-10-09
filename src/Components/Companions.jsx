@@ -1,33 +1,27 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import c1 from "../Companions/1.png";
+import c2 from "../Companions/2.png";
+import c3 from "../Companions/3.png";
+import c4 from "../Companions/4.png";
+import c5 from "../Companions/5.png";
 
 function App() {
-  const row1 = [
-    "https://theuniques.in/wp-content/uploads/2023/05/4-2-150x150.png",
-    "https://theuniques.in/wp-content/uploads/2023/05/5-1-150x150.png",
-    "https://theuniques.in/wp-content/uploads/2023/05/success-mantra-150x150.png",
-    "https://theuniques.in/wp-content/uploads/2023/05/2-2-150x150.png",
-    "https://theuniques.in/wp-content/uploads/2023/05/3-1-150x150.png",
-    "https://theuniques.in/wp-content/uploads/2023/05/1-1-150x150.png",
-  ];
+  const row1 = [c1, c2, c3, c4, c5];
+
+  // Duplicate the row1 array to create a seamless loop
+  const duplicatedRow1 = [...row1, ...row1];
 
   return (
     <AppContainer>
       <Wrapper>
-        <Text>Project Highlights</Text>
+        <Text>Our Project Highlights</Text>
         <Note>"Where Vision Meets Reality: Unraveling Our Finest Project Highlights"</Note>
         <Marquee>
           <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup>
-          <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
+            {duplicatedRow1.map((logo, index) => (
+              <ImageGroup key={index}>
+                <Image src={logo} alt={`Logo ${index + 1}`} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
@@ -76,7 +70,7 @@ const Note = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 1200px;
+  width: 78%;
   overflow: hidden;
   user-select: none;
 
@@ -90,10 +84,10 @@ const Marquee = styled.div`
 `;
 
 const scrollX = keyframes`
-  from {
-    left: translateX(0);
+  0% {
+    transform: translateX(100%);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 `;
@@ -104,17 +98,12 @@ const common = css`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 100%;
-  animation: ${scrollX} 30s linear infinite;
+  width: 200%; /* Double the width to accommodate duplicated images */
+  animation: ${scrollX} 60s linear infinite; /* Extended duration */
 `;
 
 const MarqueeGroup = styled.div`
   ${common}
-`;
-const MarqueeGroup2 = styled.div`
-  ${common}
-  animation-direction: reverse;
-  animation-delay: -3s;
 `;
 
 const ImageGroup = styled.div`
@@ -126,9 +115,8 @@ const ImageGroup = styled.div`
 
 const Image = styled.img`
   object-fit: contain;
-  width: 100%;
-  height: 100%;
-  /* border: 1px solid black; */
+  width: 85%;
+  height: 85%;
   border-radius: 0.5rem;
   aspect-ratio: 16/9;
   padding: 5px 20px;

@@ -1,24 +1,17 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
+import logo1 from "../Clients/1.png";
+import logo2 from "../Clients/2.png";
+import logo3 from "../Clients/3.png";
+import logo4 from "../Clients/4.png";
+import logo5 from "../Clients/5.png";
+import logo6 from "../Clients/6.png";
+import logo7 from "../Clients/7.png";
+import logo8 from "../Clients/8.png";
 
 function App() {
-  const row1 = [
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/7ae42bac3b34999c0db3.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/b2bd91d7b87b2181ca45.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6591cdc0702b32310306.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/3b7d9f4b073deb6a9b74.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/3cd767dea94a85078ca4.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/a2b3c3709ffedce2a22a.png",
-  ];
-
-  const row2 = [
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/9dd55e54b5a28658bf4e.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/0384060dcbf73b6a707c.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/35e044b3354aaa0caed5.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/f50ae7cbf6cc805bdadc.png",
-    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
-  ];
+  const row1 = [logo1, logo2, logo3, logo4, logo5];
+  const row2 = [logo5, logo6, logo7, logo8];
 
   return (
     <AppContainer>
@@ -27,32 +20,18 @@ function App() {
         <Note>Partnerships and Success Stories</Note>
         <Marquee>
           <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup>
-          <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
+            {row1.map((logo, index) => (
+              <ImageGroup key={index}>
+                <Image src={logo} alt={`Logo ${index + 1}`} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
         </Marquee>
         <Marquee>
           <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup2>
-          <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
+            {row2.map((logo, index) => (
+              <ImageGroup key={index}>
+                <Image src={logo} alt={`Logo ${index + 5}`} />
               </ImageGroup>
             ))}
           </MarqueeGroup2>
@@ -63,6 +42,10 @@ function App() {
 }
 
 export default App;
+
+// ... The rest of your code
+
+
 
 const AppContainer = styled.div`
   width: 100vw;
