@@ -43,10 +43,6 @@ function App() {
 
 export default App;
 
-// ... The rest of your code
-
-
-
 const AppContainer = styled.div`
   width: 100vw;
   height: 60vh;
@@ -113,7 +109,7 @@ const common = css`
   justify-content: space-around;
   white-space: nowrap;
   width: 100%;
-  animation: ${scrollX} 30s linear infinite;
+  animation: ${scrollX} 20s linear infinite;
 `;
 
 const MarqueeGroup = styled.div`

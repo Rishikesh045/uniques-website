@@ -11,5 +11,4 @@ const AllBlogs = ({ blogs }) => {
         </div>
     )
 }
-
 export default AllBlogs

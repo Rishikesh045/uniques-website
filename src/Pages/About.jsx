@@ -26,7 +26,7 @@ const About = () => {
             <Founder />
             <Step />
             <Top />
-            {/* <Team /> */}
+            {/* <Team />   */}
             <Carousel />
             <Clients />
 

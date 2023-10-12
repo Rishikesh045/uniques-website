@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 20px 30px;
@@ -17,12 +17,12 @@ html {
     left: 50px;
 }
 
-.container {
+.custom-container {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.container>div>img {
+.custom-container>div>img {
     width: 75%;
     max-width: 100%;
     transition: 0.3s ease;
@@ -30,8 +30,8 @@ html {
     margin-right: 30px;
 }
 
-.container>.boxi {
-    width: 90%;
+.custom-container>.custom-box {
+    width: 100%;
     height: 100%;
     box-shadow: 0px 5px 50px 0px rgba(33, 33, 33, 0.15);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -42,19 +42,19 @@ html {
     border-radius: 20px;
 }
 
-.container>.boxi>h1 {
+.custom-container>.custom-box>h1 {
     font-size: 35px;
     position: relative;
     left: -80px;
 }
 
-.container>.boxi>h1>span {
+.custom-container>.custom-box>h1>span {
     color: #d7ab2d;
     position: relative;
     right: -30px;
 }
 
-.container>.boxi>button {
+.custom-container>.custom-box>button {
     padding-top: 18px;
     padding-right: 22px;
     padding-bottom: 18px;
@@ -69,11 +69,11 @@ html {
     color: #ffffffff;
 }
 
-.container .boxi>button:hover {
+.custom-container>.custom-box>button:hover {
     transform: scale(1.2);
 }
 
-.container .div>img:hover {
+.custom-container>div>img:hover {
     transform: scale(1.1);
 }
 
@@ -105,59 +105,59 @@ html {
     color: #f68c33;
 }
 
-#btn-1 {
+.custom-btn-1 {
     background-color: #ffa601;
 }
 
-#btn-1:hover {
+.custom-btn-1:hover {
     background: #69727d;
 }
 
-#btn-2 {
+.custom-btn-2 {
     background-color: #545148;
 }
 
-#btn-2:hover {
+.custom-btn-2:hover {
     background-color: #f8cf52;
 }
 
-#btn-3 {
+.custom-btn-3 {
     background-color: #9e346c;
 }
 
-#btn-3:hover {
+.custom-btn-3:hover {
     background-color: #69727d;
 }
 
-#btn-4 {
+.custom-btn-4 {
     background-color: #bd0505;
 }
 
-#btn-4:hover {
+.custom-btn-4:hover {
     background-color: #545148;
 }
 
-#btn-5 {
+.custom-btn-5 {
     background-color: #69727d;
 }
 
-#btn-5:hover {
+.custom-btn-5:hover {
     background-color: #d03036;
 }
 
-#btn-6 {
+.custom-btn-6 {
     background-color: #434e52;
 }
 
-#btn-6:hover {
+.custom-btn-6:hover {
     background-color: #434e52;
 }
 
-#btn-7 {
+.custom-btn-7 {
     background-color: #ffa601;
 }
 
-#btn-7:hover {
+.custom-btn-7:hover {
     background-color: #69727d;
 }
 
@@ -167,21 +167,25 @@ html {
         padding: 0;
     }
 
-    .container {
-        display: inline-block;
+    html {
+        font-size: 1.25rem;
     }
 
-    .container.boxi {
+    .custom-container {
+        flex-wrap: wrap;
+    }
+
+    .custom-container>.custom-box {
         margin: 0px 0px 60px 0px;
     }
 
-    .container .boxi .h1 {
+    .custom-container>.custom-box>h1 {
         font-size: 30px;
         position: relative;
         left: -15px;
     }
 
-    .container .boxi .h1>span {
+    .custom-container>.custom-box>h1>span {
         right: 0px;
     }
 
@@ -189,8 +193,9 @@ html {
         left: 30px;
     }
 
-    .container .div>img {
+    .custom-container>div>img {
         margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
@@ -199,7 +204,7 @@ html {
         font-size: 90%;
     }
 
-    .container>.boxi {
+    .custom-container>.custom-box {
         margin: 0px 0px 60px 0px;
     }
 
@@ -212,17 +217,17 @@ html {
         left: 0px;
     }
 
-    .container>div>img {
+    .custom-container>div>img {
         margin-bottom: 10px;
         width: 100%;
     }
 
-    .container>.boxi>h1>span {
+    .custom-container>.custom-box>h1>span {
         right: -12px;
     }
 
-    .container>.boxi>h1 {
+    .custom-container>.custom-box>h1 {
         font-size: 32px;
         left: -35px;
     }
-} */
+}

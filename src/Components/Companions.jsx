@@ -99,7 +99,7 @@ const common = css`
   justify-content: space-around;
   white-space: nowrap;
   width: 200%; /* Double the width to accommodate duplicated images */
-  animation: ${scrollX} 60s linear infinite; /* Extended duration */
+  animation: ${scrollX} 50s linear infinite; /* Extended duration */
 `;
 
 const MarqueeGroup = styled.div`
