@@ -1,30 +1,39 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
-import c1 from "../Companions/1.png";
-import c2 from "../Companions/2.png";
-import c3 from "../Companions/3.png";
-import c4 from "../Companions/4.png";
-import c5 from "../Companions/5.png";
+import logo1 from "../Companions/1.png";
+import logo2 from "../Companions/2.png";
+import logo3 from "../Companions/3.png";
+import logo4 from "../Companions/4.png";
+import logo5 from "../Companions/5.png";
 
 function App() {
-  const row1 = [c1, c2, c3, c4, c5];
-
-  // Duplicate the row1 array to create a seamless loop
-  const duplicatedRow1 = [...row1, ...row1];
+  const row1 = [logo1, logo2, logo3, logo4, logo5];
+  const row2 = [logo1, logo2, logo3, logo4, logo5]; // Make sure to use the same images in both rows
 
   return (
     <AppContainer>
       <Wrapper>
         <Text>Our Project Highlights</Text>
-        <Note>"Where Vision Meets Reality: Unraveling Our Finest Project Highlights"</Note>
+        <Note>
+          "Where Vision Meets Reality: Unraveling Our Finest Project Highlights"
+        </Note>
         <Marquee>
           <MarqueeGroup>
-            {duplicatedRow1.map((logo, index) => (
+            {row1.map((logo, index) => (
               <ImageGroup key={index}>
                 <Image src={logo} alt={`Logo ${index + 1}`} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
+        </Marquee>
+        <Marquee>
+          <MarqueeGroup2>
+            {row2.map((logo, index) => (
+              <ImageGroup key={index}>
+                <Image src={logo} alt={`Logo ${index + 5}`} />
+              </ImageGroup>
+            ))}
+          </MarqueeGroup2>
         </Marquee>
       </Wrapper>
     </AppContainer>
@@ -32,6 +41,9 @@ function App() {
 }
 
 export default App;
+
+// ... the rest of your styled components
+
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -70,7 +82,7 @@ const Note = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 78%;
+  width: 1200px;
   overflow: hidden;
   user-select: none;
 
@@ -84,10 +96,10 @@ const Marquee = styled.div`
 `;
 
 const scrollX = keyframes`
-  0% {
-    transform: translateX(100%);
+  from {
+    left: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 `;
@@ -98,12 +110,17 @@ const common = css`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 200%; /* Double the width to accommodate duplicated images */
-  animation: ${scrollX} 50s linear infinite; /* Extended duration */
+  width: 100%;
+  animation: ${scrollX} 20s linear infinite;
 `;
 
 const MarqueeGroup = styled.div`
   ${common}
+`;
+const MarqueeGroup2 = styled.div`
+  ${common}
+  animation-direction: reverse;
+  animation-delay: -3s;
 `;
 
 const ImageGroup = styled.div`
@@ -115,8 +132,9 @@ const ImageGroup = styled.div`
 
 const Image = styled.img`
   object-fit: contain;
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
   border-radius: 0.5rem;
   aspect-ratio: 16/9;
   padding: 5px 20px;

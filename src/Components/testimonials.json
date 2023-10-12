@@ -1,32 +1,26 @@
 [
     {
-        "name": "Vishnu",
-        "position": "B.Tech CSE",
-        "image": "https://theuniques.in/wp-content/uploads/2023/05/vishnu-e1684999517684.jpg",
-        "comment": "The Code Crusade that was conducted by our seniors was a remarkable start for us freshers towards our journey.Thanks to our seniors, we got a chance to learn new things and we hope that we will be having such competition in future. "
-    },
-    {
         "name": "Riya Singh",
         "position": "B.Tech CSE",
-        "image": "https://theuniques.in/wp-content/uploads/2023/05/Riya-1-1024x1024.png",
+        "image": "https://www.theuniques.in/static/media/9.e4f67a67ae0bc33b79e6.png",
         "comment": "I enjoyed a lot and learnt some valuable things which will help me in the future.I want to say a big Thanks to all the co-ordinators of this workshop for providing us this kind of programs and helping us in developing our knowledge in C++ language."
     },
     {
         "name": "Kumar Sujal",
         "position": "B.Tech CSE",
-        "image": "https://theuniques.in/wp-content/uploads/2023/05/sujal-2-e1684999969439.jpg",
+        "image": "https://www.theuniques.in/static/media/1.c64b299f3f6f09dbc7d7.png",
         "comment": "I would like to thank the whole team of uniques for such kind of learning education and content of coding & wonderful memories of crusade uniques for 1 week like immense pleasure to being a part of it."
     },
     {
         "name": "Vasu Malhotra",
         "position": "B.Tech CSE",
-        "image": "https://theuniques.in/wp-content/uploads/2023/05/Vasu-1-1024x1024.png",
+        "image": "https://www.theuniques.in/static/media/2.cd6ac0b82fb45e9564b9.png",
         "comment": "I enjoyed a lot and learnt some valuable things which will help me in the future.I want to say a big Thanks to all the co-ordinators of this workshop for providing us this kind of programs and helping us in developing our knowledge in C++ language."
     },
     {
         "name": "Vaishnavi Bajpai",
         "position": "Project Manager",
-        "image": "https://theuniques.in/wp-content/uploads/2023/05/Vaishnavi-1024x1024.png",
+        "image": "https://www.theuniques.in/static/media/4.9ef06b4e91eef41fd314.png",
         "comment": "I had a fantastic experience and gained valuable insights that will undoubtedly benefit me in the future. I extend my heartfelt gratitude to all the workshop coordinators for organizing such enriching programs and guiding us in enhancing our proficiency in the C++ language."
     }
 ]
