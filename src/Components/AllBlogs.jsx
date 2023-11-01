@@ -1,14 +1,21 @@
-import React from 'react'
-import SingleBlog from './SingleBlog'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const AllBlogs = ({ blogs }) => {
+const SingleBlog = ({ title, desc, image }) => {
     return (
-        <div className="container">
-            <div className="row">
-                <SingleBlog />
-                {blogs.map(blog => (<SingleBlog title={blog.title} desc={blog.desc} content={blog.content} image={blog.image} author={blog.author} date={blog.date} />))}
+        <div className="col-md-4">
+            <div className="card custom-card">
+                <img src={image} className="card-img-top" alt="Blog Image" />
+                <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text text-black">{desc}</p>
+                    <Link to="/" className="btn btn-primary">
+                        Read More
+                    </Link>
+                </div>
             </div>
         </div>
-    )
-}
-export default AllBlogs
+    );
+};
+
+export default SingleBlog;

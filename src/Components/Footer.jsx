@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className='py-4 footer-section2'>
-                                <img src={dark} alt="" srcset="" width="200px" className='py-2 my-2' />
+                                <img src={dark} alt="" srcset="" className='logo-img py-2 my-2' />
                                 <p className='footer-desc py-2'>
                                     TheUniques is an educational platform which is available to everyone, everywhere. We wish to uplift the educational standards of not only our city or country but globally. Join us in this noble to cause to make education reach to those in need of it.
                                 </p>

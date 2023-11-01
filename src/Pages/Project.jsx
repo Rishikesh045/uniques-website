@@ -3,14 +3,16 @@ import React from 'react'
 import Companions from '../Components/Companions'
 import Academia from '../Components/Academia'
 import Projecthead from '../Components/Projecthead'
-// import Projects from '../Components/Projects'
+import Projects from '../Components/Projects'
+import PastEvents from '../Components/PastEvents'
 const Projectss = () => {
     return (
         <div>
             <Projecthead />
             <Academia />
-            {/* <Projects /> */}
+            <Projects />
             <Companions />
+            <PastEvents />
 
         </div>
     )

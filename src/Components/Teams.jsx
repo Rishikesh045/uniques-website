@@ -39,7 +39,7 @@ export const Teams = () => {
             <section id="team" className="team section-bg">
                 <div className="container" data-aos="fade-up">
                     <div className="section-title">
-                        <h2>Team</h2>
+                        <h2>Our Team</h2>
                         <p>
                             Teamwork is at the heart of our success. We firmly believe that when
                             individuals come together, unified by a common goal and a shared

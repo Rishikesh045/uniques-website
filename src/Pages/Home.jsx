@@ -8,6 +8,7 @@ import Objectives from '../Components/Objectives'
 import Clients from '../Components/Clients'
 import Gif from "../Components/Gif"
 import HomeHeader from '../Components/HomeHeader'
+// import PastEvents from '../Components/PastEvents'
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
             <Uzone />
             <Objectives />
             <Clients />
-
+            {/* <PastEvents /> */}
 
         </div>
     )

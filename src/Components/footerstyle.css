@@ -30,6 +30,9 @@ p {
 
 }
 
+.logo-img {
+    width: 50% !important;
+}
 
 .footer-section .col-md-6 .py-4 p i.fa {
     padding: 0;

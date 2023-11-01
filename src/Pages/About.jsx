@@ -10,6 +10,7 @@ import Sviet from '../Components/Sviet'
 import Vision from '../Components/Vision'
 import Top from '../Components/Top'
 import Step from "../Components/Step"
+import Teams from '../Components/Teams'
 import Aboutheader from '../Components/Aboutheader'
 
 
@@ -24,9 +25,9 @@ const About = () => {
             <Vision />
             <Uzone />
             <Founder />
+            <Teams />
             <Step />
             <Top />
-            {/* <Team />   */}
             <Carousel />
             <Clients />
 

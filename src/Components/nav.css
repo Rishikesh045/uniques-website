@@ -1,4 +1,4 @@
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
     color: black;
     transition: color 0.3s ease;
 }
@@ -6,4 +6,51 @@
 .navbar-nav .nav-link:hover {
     color: #6c757d;
 
+} */
+
+/* CSS in your existing 'nav.css' or a separate CSS file */
+
+/* Default styles for larger screens */
+.navbar {
+    background-color: transparent;
+    padding-top: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-item.nav-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+/* Styles on scroll */
+.navbar.scroll {
+    background-color: #000;
+}
+
+.nav-item.nav-link.scroll {
+    color: #fff;
+}
+
+/* Mobile view styles */
+@media (max-width: 767px) {
+
+    /* Create a bar in mobile view with a white background */
+    .navbar {
+        background-color: #000000;
+    }
+
+    /* Set the text color to white in mobile view */
+    .nav-item.nav-link {
+        color: #fff;
+    }
+
+    /* Add additional styles for the mobile view here */
 }
