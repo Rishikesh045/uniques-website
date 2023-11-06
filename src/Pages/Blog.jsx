@@ -1,14 +1,13 @@
 import React from 'react'
 import AllBlogs from '../Components/AllBlogs'
 import Bloghead from '../Components/Bloghead'
+import blogdata from '../Components/blogData'
 
-
-
-const Blog = ({ blogs }) => {
+const Blog = () => {
     return (
         <div>
             <Bloghead />
-            <AllBlogs blogs={blogs} />
+            <AllBlogs blogs={blogdata} />
 
 
         </div>

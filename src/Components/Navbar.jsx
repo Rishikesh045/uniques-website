@@ -14,18 +14,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './nav.css'
 import AddBlog from '../Pages/AddBlog';
 import axios from 'axios';
+import blogdata from './blogData';
+
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [blogs, setBLogs] = useState([])
-    useEffect(() => {
-        axios.get('http://localhost:8000/server/blog')
-            .then(response => {
-                setBLogs(response.data);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }, [])
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -100,7 +93,7 @@ const Navbar = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/learning" element={<Learning />} />
                 <Route path="/project" element={<Project />} />
-                <Route path="/blog" element={<Blog blogs={blogs} />} />
+                <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
                 {/* <Route path="/google" element={<Google />} /> */}
                 <Route path='/add-blog' element={<AddBlog />} />
